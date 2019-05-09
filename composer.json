@@ -1,0 +1,38 @@
+{
+    "name": "rochev/laravel-support-tickets",
+    "description": "Laravel Support Tickets plugin",
+    "authors": [
+        {
+            "name": "Vladimir Rochev",
+            "email": "vladimir@rochev.me"
+        }
+    ],
+    "require": {
+        "php": "^7.1.3",
+        "illuminate/bus": "^5.8",
+        "illuminate/console": "^5.8",
+        "illuminate/database": "^5.8",
+        "illuminate/queue": "^5.8",
+        "illuminate/routing": "^5.8",
+        "illuminate/support": "^5.8"
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Rochev\\Laravel\\SupportTickets\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Rochev\\Laravel\\SupportTickets\\ServiceProvider"
+            ]
+        }
+    }
+}

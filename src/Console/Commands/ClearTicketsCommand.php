@@ -66,7 +66,7 @@ class ClearTicketsCommand extends Command
         $job->onQueue($this->configRepository->get('tickets.queue.name'));
         $job->onConnection(
             $this->configRepository->get('tickets.queue.connection',
-                $this->configRepository->get('queue.connection')
+                $this->configRepository->get('queue.default')
             )
         );
         $this->dispatcher->dispatch($job);

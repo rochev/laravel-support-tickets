@@ -4,6 +4,7 @@
 * `php 7.1.3`
 * `laravel 5.5`
 * Worked queues
+* Worked `cron`
 
 ## Installation
 
@@ -28,3 +29,4 @@ php artisan vendor:publish \
 * Hardcoded routes
 * Non-unique command namespace (`tickets:`) and config (`tickets.`)
 * Using `$fillable` field in `Ticket` model
+* By default, CSRF is fired on module routes
